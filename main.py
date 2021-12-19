@@ -42,7 +42,7 @@ def send_message():
     if day == 5:
         url = url_1
     if day == 6:
-        url = url_1
+        url = url_2
 
     if url == "":
         pass
