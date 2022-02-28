@@ -64,7 +64,7 @@ def send_message():
     os.remove("photo.png")
 
 
-API_KEY = "5070701825:AAFXDEASCCU4friTZu7Lcj94zy_EK0qGIU0"
+API_KEY = os.environ['API']
 bot = telebot.TeleBot(API_KEY)
 
 while True:
