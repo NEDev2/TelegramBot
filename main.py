@@ -58,16 +58,16 @@ def send_message():
     sleep(0.1)
     bot.send_photo(chat_id, open("photo.png", "rb"))
 
-    print("Sent photo!")
+
     sleep(0.5)
     driver.quit()
     os.remove("photo.png")
 
 
-API_KEY = os.environ['API']
+API_KEY = "5070701825:AAFXDEASCCU4friTZu7Lcj94zy_EK0qGIU0"
 bot = telebot.TeleBot(API_KEY)
 
 while True:
 
-    send_message()
-    sleep(60 * 60 * 7)
+    send_message() # call the function
+    sleep(86400) # waits 1 day
